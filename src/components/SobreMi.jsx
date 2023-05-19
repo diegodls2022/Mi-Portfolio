@@ -7,7 +7,7 @@ import { useInView } from 'react-intersection-observer'
 import { motion } from 'framer-motion'
 // variants
 import { fadeIn } from '../variants'
-import diego1 from '../assets/diego1.png'
+import diego1 from '../assets/diego-1.jpg'
 
 const SobreMi = () => {
   const [ref, inView] = useInView({
@@ -24,9 +24,8 @@ const SobreMi = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{once: false, amount: 0.3}} 
-          className='flex-1 bg-about bg-contain bg-no-repeat h-[640px]
-           mix-blend-lighten bg-top'>
-            <img className='flex justify-center items-center h-[60vh] mx-auto' src={diego1} alt="" />
+          className='flex bg-about bg-no-repeat h-[640px] mix-blend-lighten'>
+            <img className='flex justify-center items-center h-[60vh] mx-auto rounded-lg' src={diego1} alt="" />
            </motion.div>
           {/* text */}
           <motion.div
@@ -36,59 +35,48 @@ const SobreMi = () => {
             viewport={{once: false, amount: 0.3}}  
             className='flex-1'>
               <h2 className='text-4xl font-bold inline border-b-4 border-red-500 to-red-800'>Sobre Mí</h2>
-              <h3 className='mt-4'>Soy un Desarrollador Front-end y Back-end Freelancer con unos 3 años de 
-                experiencias.
+              <h3 className='mt-4'>Soy una Persona que me gusta desarrollarme y seguir aprendiendo en nuevas
+              tecnologias. Me interesa mucho la rama de la programación asi como tambien la de Soporte Tecnico.
+              tengo muy buenas relaciones personales y me gusta inverstigar algo hasta encontrarle la solución.
               </h3>
-              <p className='mb-6'>Tengo mas de 8 años de experiencia en atención al cliente y 
-                Soporte Técnico TI  (instalación y configuración de aplicaciones tanto de Software 
-                cómo Hardware, configuración de redes informaticas, Active Directory, 
-                Herramientas de Monitoreo como (Nagios), Implementacion de Script mediante sentencias en SQL, 
-                automatizacion de tareas en Java, Manejo de Macros en Excel ).  
-                Soy Desarrollador Front-End y Back-End con tecnologias PHP y MYSQL, Java, SQL, Git, GitHub, 
-                Microsoft Office, HTML5, CSS3, SASS, GULP, Javascript, TailwindCSS, Laravel, ReactJS, 
-                Bootstrap, Material UI.
-                También tengo un buen manejo y entendimiento del idioma Inglés.
-                Estoy en búsqueda de una oportunidad para crecer como desarrollador y aprender mucho más sobre 
-                lo referido al área IT.
+              <p className='mt-4'>Tengo mas de 10 años de experiencia en atención al cliente, Logistica, 
+                Administración, Desarrollo y Soporte Técnico TI.
               </p>
               {/* state */}
-              <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
+              <div className='flex gap-x-6 lg:gap-x-10 mt-2'>
                 <div>
                   <div className='text-[40px] from-red-500 to-red-800 font-bold text-white mb-2'>
                       { inView ?    
                     <CountUp start={0} end={10} duration={3} /> : 
                     null }
-                    k+
+                    {''} años
                   </div>
                   <div className='font-bold text-black text-sm tracking-[2px]'>
-                    Años de <br />
-                    Experiencias
+                    Soporte Tecnico Nivel I y II <br />
                   </div>
                 </div>
 
                 <div>
                   <div className='text-[40px] from-red-500 to-red-800 font-bold text-white mb-2'>
                       { inView ?    
-                    <CountUp start={0} end={8} duration={3} /> : 
+                    <CountUp start={0} end={4} duration={4} /> : 
                     null }
-                    k+
+                    {''} años
                   </div>
                   <div className='font-bold text-black text-sm tracking-[2px]'>
-                    Soporte Tecnico <br />
-                    Nivel I y II
+                    Desarrollo Web y Aplicaciones <br />
                   </div>
                 </div>
 
                 <div>
                   <div className='text-[40px] from-red-500 to-red-800 font-bold text-white mb-2'>
                       { inView ?    
-                    <CountUp start={0} end={5} duration={3} /> : 
+                    <CountUp start={0} end={3} duration={4} /> : 
                     null }
-                    k+
+                    {''} años
                   </div>
                   <div className='font-bold text-black text-sm tracking-[2px]'>
-                    Desarrollo Front-end y <br />
-                    Back-end
+                    Administración y Logistica <br />
                   </div>
                 </div>
               </div>

@@ -20,10 +20,10 @@ const Experiencia = () => {
                 {/* text */}
                   <div className='text-white text-3xl leading-tight font-bold'>
                       <h2>Mis Trabajo de <br />
-                        Desarrollo.
+                        Desarrollo de aplicación web.
                       </h2>
                       <p className='mt-4 max-w-sm text-gray-300 mb-16'>
-                        Estos son algunos de mis ultimos proyectos realizado. 
+                        Estos son algunos de mis proyectos realizado. 
                       </p>
                   </div>
                 {/* imagen */} 

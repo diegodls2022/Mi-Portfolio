@@ -16,11 +16,11 @@ const Contacto = () => {
                   viewport={{once: false, amount: 0.3}} 
                 >
                     <div>
-                        <h4 className='text-xl uppercase text-white font-medium mb-2 
-                        -tracking-wide'>Ponerse en Contacto</h4>
-                        <h2 className='text-[45px] lg:text-[90px] leading-none mb-12'>
+                        <h4 className='text-xl uppercase text-white font-medium mb-4 
+                        -tracking-wide'>Contáctame</h4>
+                        {/*<h2 className='text-[45px] lg:text-[90px] leading-none mb-12'>
                           Trabajemos <br /> juntos!
-                        </h2>
+                          </h2>*/}
                     </div>
                 </motion.div>
               {/* form */}
@@ -57,11 +57,11 @@ const Contacto = () => {
                   <textarea 
                     className='bg-transparent border-b py-3 outline-none w-full
                      placeholder:text-white focus:border-gray-400 transition-all resize-none mb-12' 
-                    placeholder='Escribe tu mensaje'  
+                    placeholder='Escribe tu mensaje aquí'  
                   ></textarea>
                   <button
                     type='submit' 
-                    className='bg-indigo-500 hover:bg-red-600 transition-colors 
+                    className='bg-sky-500 hover:bg-sky-800 transition-colors 
                           text-white cursor-pointer p-3 uppercase font-bold rounded-full'>Enviar Mensaje</button>
                 </motion.form>
             </div>

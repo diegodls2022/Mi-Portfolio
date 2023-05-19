@@ -8,7 +8,7 @@ const servicios = [
   {
     name: 'Desarrollador Full Stack',
     description: 
-    'Front-End: Html5, Css3, Sass, javascript, TailwindCSS, MaterialUI, Bootstrap, React JS. Back-end: PHP, SQL, Node JS, Laravel.',
+    'Front-End: Html5, Css3, Sass, javascript, TailwindCSS, MaterialUI, Bootstrap, NextJS, Redux, React JS. Back-end: PHP, Javascript, NodeJS, Express, Laravel.',
     link: 'Leer Más',
   },
   {
@@ -26,7 +26,7 @@ const servicios = [
   {
     name: 'Base de Datos',
     description: 
-    'Access, MySQL, SQL, Postgres, PLSQL.',
+    'Access, MySQL, SQL, Postgres, MongoDB, PLSQL.',
     link: 'Leer Más',
   },
 ]
@@ -45,10 +45,10 @@ const Servicios = () => {
               className='flex-1 lg:bg-gray mix-blend-lighten mb-12 lg:mb-0'
             >
                 <img className='flex justify-center items-center h-[60vh] mx-auto' src={image} alt="imagen perfil" />
-              <h2 className='text-white font-bold mb-6'>Lo que hago</h2>
+              <h2 className='text-white font-bold mb-6'>Lo que realizó y me dedicó</h2>
               <h3 className='text-white max-w-[455px] mb-16'>
-                Soy un Desarrollador Front-end y Back-end Freelancer con unos 3 años de 
-                experiencias.  
+                Soy una persona que se compromete con el trabajo diario y cumplir con mis objetivos  
+                laborales.  
               </h3>
             </motion.div>
             {/* servicios */}
@@ -69,12 +69,12 @@ const Servicios = () => {
                               <p className='font-secondary leading-tight'>{description}</p>
                           </div>
                           <div className='flex flex-col flex-1 items-end'>
-                              <a href="#" className='bg-indigo-800 hover:bg-red-600 transition-colors 
+                              {/*<a href="#" className='bg-indigo-800 hover:bg-red-600 transition-colors 
                               cursor-pointer p-3 uppercase rounded-full w-9 h-9 mb-[42px]
                               flex justify-center items-center'>
                                   <BsArrowUpRight /> 
-                              </a>
-                              <a href="#" className='text-gray text-sm'>{link}</a>
+                                 </a>*/}
+                              {/*<a href="#" className='text-gray text-sm'>{link}</a>*/}
                           </div>
                       </div>
                       );
